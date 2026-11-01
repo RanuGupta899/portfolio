@@ -8,8 +8,8 @@ export const profile = {
     "Full Stack Developer with hands-on experience building production web apps using Next.js, React, Node.js, Express, MySQL and MongoDB. I enjoy turning ideas into clean, responsive interfaces backed by reliable APIs, and I'm always learning to write more scalable code.",
   email: "ranu300211@gmail.com",
   phone: "+91 9118054620",
-  github: "https://github.com/YOUR-USERNAME", // TODO: replace with your GitHub link
-  linkedin: "", // optional: add your LinkedIn URL
+  github: "https://github.com/RanuGupta899", // TODO: replace with your GitHub link
+  linkedin: "https://www.linkedin.com/in/ranu-gupta-6a68442a3/", // optional: add your LinkedIn URL
   location: "Uttar Pradesh, India",
 };
 
@@ -54,6 +54,13 @@ export const softSkills = ["Hardworking", "Comprehensive Problem Solving", "Time
 
 // Live projects. Update descriptions to match exactly what YOU built on each.
 export const projects = [
+    {
+    title: "D1Notes",
+    url: "https://d1notes.com",
+    description:
+      "Platform connecting athletes and coaches for game evaluations, with dynamic profiles and secure requests.",
+    tags: ["Next.js", "Node.js", "MySQL"],
+  },
   {
     title: "101 Acres",
     url: "https://101acres.com",
@@ -68,13 +75,7 @@ export const projects = [
       "Matrimonial / wedding platform with a clean, mobile-friendly interface and smooth user flows.",
     tags: ["Next.js", "Tailwind CSS"],
   },
-  {
-    title: "D1Notes",
-    url: "https://d1notes.com",
-    description:
-      "Platform connecting athletes and coaches for game evaluations, with dynamic profiles and secure requests.",
-    tags: ["Next.js", "Node.js", "MySQL"],
-  },
+
   {
     title: "AarnexAI",
     url: "https://aarnexai.com",
@@ -90,7 +91,7 @@ export const projects = [
     tags: ["Next.js", "Tailwind CSS"],
   },
   {
-    title: "The Landos (AAP)",
+    title: "Landos",
     url: "https://aap.thelandos.com",
     description:
       "Web application delivered for The Landos, built with a scalable, modular Next.js codebase.",

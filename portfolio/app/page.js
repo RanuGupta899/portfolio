@@ -83,6 +83,9 @@ export default function Home() {
             {profile.github && !profile.github.includes("YOUR-USERNAME") && (
               <a href={profile.github} target="_blank" rel="noopener noreferrer" className="text-link">GitHub <span aria-hidden>↗</span></a>
             )}
+            {profile.linkedin && (
+              <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className="text-link">LinkedIn <span aria-hidden>↗</span></a>
+            )}
           </div>
           <div className="mt-14 flex items-center gap-5 border-t border-white/10 pt-6 text-xs text-white/40">
             <span className="font-mono text-lime">01 / 04</span>
@@ -255,6 +258,9 @@ export default function Home() {
               {profile.email}
             </a>
             <a href={`tel:${profile.phone.replace(/\s/g, "")}`} className="transition hover:text-lime">{profile.phone}</a>
+            {profile.linkedin && (
+              <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className="transition hover:text-lime">LinkedIn</a>
+            )}
             <a href="#top" className="transition hover:text-lime">Back to top ↑</a>
           </div>
         </div>
