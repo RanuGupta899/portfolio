@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ranu Gupta | Resume</title>
+    <style>
+      :root {
+        --bg: #10120f;
+        --panel: #171a15;
+        --accent: #b8f06a;
+        --text: #f4f4ef;
+        --muted: #c8c8c2;
+        --line: rgba(255,255,255,0.12);
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+      .page {
+        max-width: 980px;
+        margin: 40px auto;
+        background: rgba(255,255,255,0.02);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 40px 28px;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 20px;
+        margin-bottom: 28px;
+      }
+      h1 {
+        margin: 0;
+        font-size: clamp(2.1rem, 4vw, 3rem);
+        letter-spacing: -0.05em;
+      }
+      .role {
+        margin-top: 8px;
+        color: var(--accent);
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        font-size: 0.82rem;
+      }
+      .contact {
+        text-align: right;
+        color: var(--muted);
+        font-size: 0.96rem;
+      }
+      .contact a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      .section {
+        margin-top: 24px;
+      }
+      .section h2 {
+        margin: 0 0 10px;
+        font-size: 1.15rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--accent);
+      }
+      .summary {
+        color: var(--muted);
+        font-size: 1rem;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 28px;
+      }
+      ul {
+        margin: 0;
+        padding-left: 18px;
+        color: var(--muted);
+      }
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+      }
+      .tag {
+        border: 1px solid var(--line);
+        background: rgba(255,255,255,0.02);
+        border-radius: 999px;
+        padding: 7px 12px;
+        color: var(--text);
+        font-size: 0.8rem;
+      }
+      @media (max-width: 700px) {
+        .header, .grid {
+          grid-template-columns: 1fr;
+          display: block;
+        }
+        .contact {
+          text-align: left;
+          margin-top: 16px;
+        }
+        .page {
+          margin: 20px 14px;
+          padding: 24px 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="header">
+        <div>
+          <h1>Ranu Gupta</h1>
+          <div class="role">Full Stack Developer</div>
+        </div>
+        <div class="contact">
+          <div>Uttar Pradesh, India</div>
+          <div><a href="mailto:ranu300211@gmail.com">ranu300211@gmail.com</a></div>
+          <div><a href="tel:+919118054620">+91 9118054620</a></div>
+          <div><a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noreferrer">GitHub</a></div>
+        </div>
+      </div>
+
+      <section class="section">
+        <h2>Summary</h2>
+        <div class="summary">
+          Full Stack Developer with hands-on experience building production web apps using Next.js, React, Node.js, Express, MySQL and MongoDB. I enjoy turning ideas into clean, responsive interfaces backed by reliable APIs, and I am always learning to write more scalable code.
+        </div>
+      </section>
+
+      <div class="grid">
+        <section class="section">
+          <h2>Experience</h2>
+          <div>
+            <strong>Aarna Tech Experts</strong> — Full Stack Developer<br />
+            <small>Dec 2024 – Present</small>
+            <ul>
+              <li>Built full-stack projects using Next.js and MySQL and deployed them via Vercel.</li>
+              <li>Designed responsive user interfaces using Tailwind CSS.</li>
+              <li>Used Git for version control and collaborated on scalable modules.</li>
+            </ul>
+          </div>
+          <div style="margin-top: 18px;">
+            <strong>Digicoders Technology Pvt. Ltd.</strong> — Web Developer Intern<br />
+            <small>Jul 2024 – Dec 2024</small>
+            <ul>
+              <li>Built front-end interfaces with React, JavaScript, HTML and CSS.</li>
+              <li>Contributed to backend APIs using Node.js and Express.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Education</h2>
+          <div>
+            <strong>Diploma in Computer Science and Engineering</strong><br />
+            Government Girls Polytechnic, Gorakhpur<br />
+            <small>Sep 2021 – Jul 2024</small>
+          </div>
+        </section>
+      </div>
+
+      <section class="section">
+        <h2>Skills</h2>
+        <div class="skills">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">Tailwind CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Bootstrap</span>
+          <span class="tag">React.js</span>
+          <span class="tag">Next.js</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">Express.js</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">Git</span>
+          <span class="tag">Vercel</span>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

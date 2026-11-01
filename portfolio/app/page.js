@@ -13,6 +13,7 @@ const nav = [
   ["Experience", "#experience"],
   ["Work", "#projects"],
   ["Skills", "#skills"],
+  ["Contact", "#contact"],
 ];
 
 function Section({ id, eyebrow, title, children }) {
@@ -70,6 +71,15 @@ export default function Home() {
           <p className="mt-7 max-w-xl text-lg leading-8 text-white/55 sm:text-xl">{profile.tagline}</p>
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <a href="#projects" className="button">Explore my work <span aria-hidden>↓</span></a>
+            <a
+              href="/Ranu-Gupta-Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download="Ranu-Gupta-Resume.pdf"
+              className="button button-small bg-transparent text-white border-white/20 hover:border-lime hover:text-lime"
+            >
+              Resume <span aria-hidden>↓</span>
+            </a>
             {profile.github && !profile.github.includes("YOUR-USERNAME") && (
               <a href={profile.github} target="_blank" rel="noopener noreferrer" className="text-link">GitHub <span aria-hidden>↗</span></a>
             )}
@@ -213,6 +223,10 @@ export default function Home() {
       </Section>
 
       <section id="contact" className="section-wrap scroll-mt-24 pb-20 pt-10 sm:pb-28">
+        <div className="mb-10">
+          <p className="eyebrow mb-3">Contact</p>
+          <h2 className="section-title">Let&apos;s build something great together.</h2>
+        </div>
         <div className="contact-panel relative overflow-hidden rounded-3xl border border-lime/20 bg-[#b8f06a] px-7 py-12 text-[#151811] sm:px-12 sm:py-16 lg:px-16">
           <div className="contact-mark absolute -right-10 -top-24 select-none font-display text-[280px] font-bold leading-none text-black/[0.05]" aria-hidden>✳</div>
           <div className="relative z-10 max-w-2xl">
@@ -220,8 +234,9 @@ export default function Home() {
             <h2 className="font-display text-4xl font-semibold leading-tight tracking-[-0.04em] sm:text-6xl">Let&apos;s make it<br />happen together.</h2>
             <p className="mt-5 max-w-lg text-sm leading-6 text-black/65 sm:text-base">I&apos;m open to full-stack and frontend opportunities. Have a project or a role in mind? I&apos;d love to hear about it.</p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <a href={`mailto:${profile.email}`} className="contact-button">{profile.email} <span aria-hidden>↗</span></a>
+              <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(profile.email)}`} target="_blank" rel="noopener noreferrer" className="contact-button">{profile.email} <span aria-hidden>↗</span></a>
               <a href={`tel:${profile.phone.replace(/\s/g, "")}`} className="contact-secondary">{profile.phone}</a>
+              <a href="/Ranu-Gupta-Resume.pdf" target="_blank" rel="noopener noreferrer" download="Ranu-Gupta-Resume.pdf" className="contact-secondary">Download Resume</a>
             </div>
           </div>
         </div>
